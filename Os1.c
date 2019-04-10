@@ -11,11 +11,11 @@ int main()
 	
 	pid_t pid;
 
-		do
-		{
+		while (k <= 0){
 			printf("Please enter a number greater than 0 "); 
-  			scanf("%d", &k);	
-		}while (k <= 0);
+  			scanf("%d", &k);
+		}
+		
 
 		pid = fork();
 
